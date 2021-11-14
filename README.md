@@ -1,2 +1,1 @@
-# PKR-HOI
-Priori Knowledge Reasoning for Human-Object Interaction Detection
+# PKR-HOI: Priori Knowledge Reasoning for Human-Object Interaction Detection
