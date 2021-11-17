@@ -53,7 +53,7 @@ def get_args_parser():
                         help="Number of decoding layers in the transformer")
     parser.add_argument('--cnn_layers', default=3, type=int,
                         help="Number of cnn layers for verbs detection in the transformer")
-    parser.add_argument('--cnn_verb_loss_type', type=str, default='focal',
+    parser.add_argument('--cnn_verb_loss_type', type=str, default='bce',
                     help='Loss type for the verb classification in CNN')
     parser.add_argument('--dim_feedforward', default=2048, type=int,
                         help="Intermediate size of the feedforward layers in the transformer blocks")
@@ -71,7 +71,7 @@ def get_args_parser():
     parser.add_argument('--masks', action='store_true',
                         help="Train segmentation head if the flag is provided")
 
-    # simulte 8 gpus
+    # simulte double gpus
     parser.add_argument('--simulate_double_gpus', type=int, default=0)
     # HOI
     parser.add_argument('--hoi', action='store_true',
@@ -118,9 +118,9 @@ def get_args_parser():
     parser.add_argument('--loss_giou_detr', default=1, type=float)
 
     # all loss weight
-    parser.add_argument('--loss_hoi_weight', default=1, type=float)
-    parser.add_argument('--loss_detr_weight', default=1, type=float)
-    parser.add_argument('--loss_verbs_weight', default=1, type=float)
+    parser.add_argument('--loss_hoi_weight', default=0.7, type=float)
+    parser.add_argument('--loss_detr_weight', default=0.3, type=float)
+    parser.add_argument('--loss_verbs_weight', default=0.7, type=float)
 
     # dataset parameters
     parser.add_argument('--dataset_file', default='vcoco')
