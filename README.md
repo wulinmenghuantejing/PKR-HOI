@@ -2,13 +2,31 @@
 
 <div align="center">
   <img src="Figure/overview.png" width="900px" />
-  <img src="Figure/f1.png" width="900px" />
-  <img src="Figure/f2.png" width="900px" />
+    Figure 1
 </div>
 
-PKR-HOI is a priori knowledge based framework that models scene context, human and object features, action recognition, and interaction relationship in a unified way for accurate HOI prediction. PKR-HOI aggregates the different-level features and attention mechanism in the transformer, and as a result, achieves high HOI detection performance with HOI decoder.
 
+Figure 1. PKR-HOI is a priori knowledge based framework that models scene context, human and object features, action recognition, and interaction relationship in a unified way for accurate HOI prediction. PKR-HOI aggregates the different-level features and attention mechanism in the transformer, and as a result, achieves high HOI detection performance with HOI decoder.
 
+<div align="center">
+  <img src="Figure/f2.png" width="900px" />
+    Figure 2
+</div>
+
+Figure 2. Leveraging the action recognition sub-network. The top row shows the HOI prediction without the action recognition network,
+
+and the bottom row shows the results with the action recognition sub-network.
+
+<div align="center">
+  <img src="Figure/f1.png" width="900px" />
+	Figure3
+</div>
+
+Figure 3. Visualization of the attention maps for HOI decoder. It can be seen from the figure that PKR-HOI pays different attention
+
+to the contextual information in the HOI prediction process. PKR-HOI pays more attention to the entities with interactive relationships.
+
+Moreover, our method attends to recognize different actions(e.g. *hold* and *stand*) in the same image by paying attention to different areas.
 
 ## Preparation
 
