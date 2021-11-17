@@ -1,6 +1,11 @@
 # PKR-HOI: Priori Knowledge Reasoning for Human-Object Interaction Detection
 
-![arc](https://user-images.githubusercontent.com/23740707/141664966-a7457456-0422-4c57-b21f-539c886dc172.png)
+<div align="center">
+  <img src="Figure/overview.png" width="900px" />
+  <img src="Figure/f1.png" width="900px" />
+  <img src="Figure/f2.png" width="900px" />
+</div>
+
 PKR-HOI is a priori knowledge based framework that models scene context, human and object features, action recognition, and interaction relationship in a unified way for accurate HOI prediction. PKR-HOI aggregates the different-level features and attention mechanism in the transformer, and as a result, achieves high HOI detection performance with HOI decoder.
 
 
@@ -222,16 +227,15 @@ python generate_vcoco_official.py \
 ```
 
 ## Results
-HICO-DET.
-|| Full (D) | Rare (D) | Non-rare (D) | Full(KO) | Rare (KO) | Non-rare (KO) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-|PKR-HOI (ResNet50)|          |          |              |          |           |               |
-
-(D: Default, KO: Known object)
 
 V-COCO.
 
 || Scenario 1 | Scenario 2 |
 | :--- | :---: | :---: |
-|PKR-HOI (ResNet50)|  |  |
+|PKR-HOI (ResNet50)| 63.3 | 65.5 |
+
+HICO-DET.
+|| Full | Rare | Non-rare |
+| :--- | :---: | :---: | :---: |
+|PKR-HOI (ResNet50)| 30.90 | 27.01 | 32.42 |
 
